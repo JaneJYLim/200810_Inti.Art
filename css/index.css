@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* Reset영역 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #888888;
+    text-decoration: none;
+}
+/* Reset영역 */
+/* GuideLine영역 시작 */
+/* header#header{border: 1px solid #000;} */
+/* div#wrap{border: 1px solid #f00;} */
+main#main{border: 1px solid #ccc;}
+/* #main>div{border: 1px solid #f00;} */
+/* footer#footer{border: 1px solid #0f0;} */
+/* GuideLine영역 끝 */
+/* 공통영역 시작 */
+body{
+    width: 100%;
+    position: relative;
+}
+div#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+/* 공통영역 끝 */
+/* header#header 영역 시작 */
+#header{
+    height: 100px;
+    background-color: #CAAC7D;
+    display: flex;
+    justify-content: center;
+}
+#header #headerLogo{
+    width: 200px;
+    height: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+#header #headerLogo img{
+    width: 200px;
+    height: 80px;
+}
+#gnb{
+    width: 1000px;
+    position: relative;
+    z-index: 1;
+
+}
+#gnb #mainMenu{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+#gnb #mainMenu>li{
+    border: 1px solid #000;
+    float: left;
+}
+#gnb #mainMenu>li:not(:first-child){
+    border-left: none;
+}
+#gnb #mainMenu>li>a:first-child{
+    border-bottom: 1px solid #000;
+}
+#gnb #mainMenu>li>a{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+#gnb #mainMenu .subMenu a{
+    width: 150px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    display: inline-block;
+}
+#gnb #mainMenu>li>a:hover{
+    color: #ffffff;
+    background-color: #4A4948;
+}
+#gnb #mainMenu>li:hover>.subMenu li a:hover{
+    color: #ffffff;
+    background-color: #CAAC7D;
+}
+#subMenu2, #subMenu3, #subMenu4{
+    display: none;
+}
+/* header#header 영역 끝 */
+/* div#wrap 영역 시작 */
+/* div#slideImg 영역 시작 */
+#slideImg{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+#slideImg>div{
+    position: relative;
+}
+#slideImg p{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#slideImg img{
+    width: 1200px;
+    height: 300px;
+}
+/* div#slideImg 영역 끝 */
+/* main#main 영역 시작 */
+main#main{
+    padding: 10px;
+    position: relative;
+    display: flex;
+}
+#main>div{
+    height: 180px;
+}
+    
+#main button{
+    font-size: 16px;
+    padding: 6px 10px;
+    border: 1px solid #000;
+    margin: 10px 0 0 60px;  
+}
+    /* div#bbs 영역 시작 */
+    #main #bbs{
+        width: 450px;
+    }
+    #main #bbs button{
+        border-bottom: none;
+        position: relative;
+        top: 1px;
+    }
+    #main #bbs ul{
+        width: 370px;
+        height: 120px;
+        border: 1px solid #000;
+        padding: 10px 5px 20px 0;
+        margin: 0 34px;
+    }
+    #main #bbs ul li{
+        font-size: 15px;
+        padding: 8px 0 0 15px;
+    }
+    #main #bbs ul li:hover{
+        opacity: 0.8;
+    }
+
+    #main #bbs ul li span{
+        width: 250px;
+        display: inline-block;
+    }
+    /* div#bbs 영역 끝 */
+    /* div#gallery 영역 시작 */
+    #main #gallery{
+        width: 450px;
+    }
+    #main #gallery button{
+        border-bottom: none;
+    }
+    #main #gallery #pic{
+        width: 370px;
+        height: 120px;
+        text-align: center;
+        border: 1px solid #000;
+        margin: 0 34px;
+    }
+    #main #gallery #pic img{
+        width: 110px;
+        height: 100px;
+        margin: 10px 2px 0 2px;
+    }
+    #main #gallery #pic img:hover{
+        opacity: 0.8;
+    }
+    /* div#gallery 영역 끝 */
+    /* div#banner 영역 시작 */
+    #main #banner{
+        width: 300px;
+        text-align: center;
+    }
+    #main #banner img{
+        height: 120px;
+        margin-top: 30px;
+    }
+    /* div#banner 영역 끝 */
+/* main#main 영역 끝 */
+/* div#wrap 영역 끝 */
+/* footer#footer 영역 시작 */
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #CAAC7D;
+    display: flex;
+    justify-content: center;
+}
+/* div#footerLogo 영역 시작 */
+
+    #footer #footerLogo{
+        width: 200px;
+        height: 80px;
+        background-color: #ffffff;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #footer #footerLogo img{
+        width: 200px;
+        height: 80px;
+    }
+
+    /* div#footerLogo 영역 끝 */
+    /* div#copyright 영역 시작 */
+    #footer #copyright{
+        width: 800px;
+        margin-top: 26px;
+    }
+    #footer #copyright p{
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 0;
+        
+    }
+    /* div#copyright 영역 끝 */
+    /* div#sns 영역 시작 */
+    #footer #sns{
+        width: 200px;
+        margin-top: 26px;
+        text-align: right;
+    }
+    #footer #sns img{
+        width: 46px;
+        margin: 0 2px;
+        
+    }
+    /* div#sns 영역 끝 */
+/* footer#footer 영역 끝 */
+/* div#layerBackground 영역 시작 */
+#layerBackground{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+#layerBackground #layer{
+    width: 700px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#layerBackground #layer h2{
+    margin: 15px 10px;
+}
+#layerBackground #layer hr{
+    margin-bottom: 20px;
+}
+#layerBackground #layer ul{
+    padding: 0 30px 0 20px;
+    margin-bottom: 50px;
+}
+#layerBackground #layer ul li{
+    padding: 8px 0;
+}
+
+#layerBackground #layer span{
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #caac7d;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    cursor: pointer;
+}
+/* div#layerBackground 영역 끝 */
