@@ -1,145 +1,183 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>세계의 미술작품</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header id="header">
-        <div id="headerLogo">
-            <a href="#">
-                <img src="images/logo/logo_header.png" alt="헤더이미지">
-            </a>
-        </div>
-        <nav id="gnb">
-            <ul id="mainMenu">
-                <li>
-                    <a href="#">소장처별</a>
-                    <ul class="subMenu" id="subMenu1">
-                        <li><a href="#">한국</a></li>
-                        <li><a href="#">프랑스</a></li>
-                        <li><a href="#">이탈리아</a></li>
-                        <li><a href="#">독일</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">장르별</a>
-                    <ul class="subMenu" id="subMenu2">
-                        <li><a href="#">회화</a></li>
-                        <li><a href="#">판화</a></li>
-                        <li><a href="#">공예/고대유물</a></li>
-                        <li><a href="#">그외</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">테마별</a>
-                    <ul class="subMenu" id="subMenu3">
-                        <li><a href="#">초상화/인물</a></li>
-                        <li><a href="#">종교</a></li>
-                        <li><a href="#">신화/문학</a></li>
-                        <li><a href="#">일상/스포츠</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">시대별</a>
-                    <ul class="subMenu" id="subMenu4">
-                        <li><a href="#">1900년이전</a></li>
-                        <li><a href="#">1900년대</a></li>
-                        <li><a href="#">현대</a></li>
-                        <li><a href="#">그외</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <div id="wrap">
-        <div id="slideImg">
-            <div id="slide1" class="slide">
-                <a href="#">
-                    <p>시대의 작품 세계의 거장과 함께한 전시회</p>
-                    <img src="images/slide/klwjeelll902092k2.jpg" alt="슬라이드이미지1">
-                </a>
+        <header id="header">
+            <div id="headerInnerFrame" class="displayFlex">
+                <div id="headerLogo">
+                    <a href="#">
+                        <img src="images/logo_header.png" alt="헤더로고">
+                    </a>
+                </div>
+                <!--div#headerLogo-->
+                <nav id="gnb">
+                    <ul id="mainMenu">
+                        <li><a href="#">소장처별</a>
+                            <ul class="subMenu">
+                                <li><a href="#">한국</a></li>
+                                <li><a href="#">프랑스</a></li>
+                                <li><a href="#">이탈리아</a></li>
+                                <li><a href="#">독일</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">장르별</a>
+                            <ul class="subMenu">
+                                <li><a href="#">회화</a></li>
+                                <li><a href="#">판화</a></li>
+                                <li><a href="#">공예/고대유물</a></li>
+                                <li><a href="#">그외</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">테마별</a>
+                            <ul class="subMenu">
+                                <li><a href="#">초상화/인물</a></li>
+                                <li><a href="#">종교</a></li>
+                                <li><a href="#">신화/문학</a></li>
+                                <li><a href="#">일상/스포츠</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">시대별</a>
+                            <ul class="subMenu">
+                                <li><a href="#">1900년대이전</a></li>
+                                <li><a href="#">1900년대</a></li>
+                                <li><a href="#">현대</a></li>
+                                <li><a href="#">그외</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div id="slide2" class="slide">
-                <a href="#">
-                    <p>야외 조형물 전시장도 오픈합니다.</p>
-                    <img src="images/slide/Louvre_at_night_centered.jpg" alt="슬라이드이미지2">
-                </a>
-            </div>
-            <div id="slide3" class="slide">
-                <a href="#">
-                    <p>명화와 함께 떠나는 휴가~</p>
-                    <img src="images/slide/owijkwlllw2232k23k2k.jpg" alt="슬라이드이미지3">
-                </a>
+            <!--div#headerInnerFrame-->
+        </header>
+        <!--header#header-->
+        <div id="slideShow">
+            <div id="slideFrame">
+                <a href="#"><img src="images/slideShow_01.jpg" alt="슬라이드이미지1"></a>
+                <a href="#"><img src="images/slideShow_02.jpg" alt="슬라이드이미지2"></a>
+                <a href="#"><img src="images/slideShow_03.jpg" alt="슬라이드이미지3"></a>
+                <p id="promotionTxt">
+                    시대의 작품 세계의 거장과 함께한 전시회<br>
+                    야외 조형물 전시장도 오픈합니다. <br>
+                    명화와 함께 떠나는 휴가~
+                </p>
             </div>
         </div>
-        <main id="main">
-            <div id="bbs">
+        <!--div#slideShow-->
+        <main id="main" class="displayFlex">
+            <div id="bbsNotice">
                 <button type="button">공지사항</button>
-                <ul>
-                    <li onclick="fnLayer()">
-                        <a href="#"><span>2019 시민큐레이터 프로젝트</span>2019/05/07</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>SeMA신소장품 멀티-엑세스 4</span>2019/05/03</a>
-                    </li>
-                    <li>
-                        <a href="#"><span>월 북서울미술관 문화행사 일정</span>2019/02/22</a>
-                    </li>
-                </ul>
+                <div id="tabContentNotice" class="tabContent">
+                    <table>
+                        <tbody>
+                            <tr onclick="fnLayerPopup()">
+                                <td><a href="#">2019 시민큐레이터 프로젝트</a></td>
+                                <td><a href="#">2019/05/07</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">SeMA신소장품 멀티-엑세스 4</a></td>
+                                <td><a href="#">2019/05/03</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">월 북서울미술관 문화행사 일정</a></td>
+                                <td><a href="#">2019/02/22</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--div#tabContentNotice-->
             </div>
-            <div id="gallery">
+            <!--div#bbsNotice-->
+            <div id="bbsGallery">
                 <button type="button">갤러리</button>
-                <div id="pic">
-                    <a href="#"><img src="images/gallery/lllwkiadddfwww63.jpg" alt="이미지1"></a>
-                    <a href="#"><img src="images/gallery/o2o8ll2333923.jpg" alt="이미지2"></a>
-                    <a href="#"><img src="images/gallery/sallw.jpg" alt="이미지3"></a>
+                <div id="tabContentGallery" class="tabContent">
+                    <a href="#"><img src="images/gallery_01.jpg" alt="갤러리이미지1"></a>
+                    <a href="#"><img src="images/gallery_02.jpg" alt="갤러리이미지2"></a>
+                    <a href="#"><img src="images/gallery_03.jpg" alt="갤러리이미지3"></a>
                 </div>
             </div>
-            <div id="banner">
-                <a href="#"><img src="images/lkjqweikoljkq.png" alt="배너"></a>
-            </div>
+            <!--div#bbgGallery-->
+            <aside id="banner">
+                <a href="#"><img src="images/banner.png" alt="배너이미지" width="360" height="180"></a>
+            </aside>
+            <!--aside#banner-->
         </main>
+        <!--main#main-->
+        <footer id="footer">
+            <div id="footerInnerFrame" class="displayFlex">
+                <div id="footerLogo">
+                    <a href="#"><img src="images/logo.png" alt="푸터로고"></a>
+                </div>
+                <!--div#footerLogo-->
+                <div id="copyright">
+                    <address>
+                        04515 서울특별시 중구 덕수궁길 61 (서소문동) (02) 2124-8800
+                    </address>
+                    <p>
+                        ©2019 Milwaukee Art Museum 700 N. Art Museum Drive Milwaukee, WI 53202
+                    </p>
+                </div>
+                <!--div#copyright-->
+                <div id="sns">
+                    <img src="images/ico_fb.png" alt="페이스북아이콘">
+                    <img src="images/ico_in.png" alt="인스타그램아이콘">
+                    <img src="images/ico_blog.png" alt="블로그아이콘">
+                </div>
+                <!--div#sns-->
+            </div>
+        </footer>
+        <!--footer#footer-->
     </div>
-    <footer id="footer">
-        <div id="footerLogo">
-            <a href="#">
-                <img src="images/logo/logo.png" alt="푸터이미지">
-            </a>
-        </div>
-        <div id="copyright">
-            <p>04515  서울특별시 중구 덕수궁길 61   (서소문동)  (02) 2124-8800</p>
-            <p>©2019 Milwaukee Art Museum   700 N. Art Museum Drive  	Milwaukee, WI 53202 </p>
-        </div>
-        <div id="sns">
-            <a href="#"><img src="images/sns/facebook.png" alt="페이스북"></a>
-            <a href="#"><img src="images/sns/instagram.png" alt="인스타그램"></a>
-            <a href="#"><img src="images/sns/blog.png" alt="블로그"></a>
-        </div>
-    </footer>
+    <!--div#wrap-->
+    <div id="layerPopupBg">
+        <div id="layerPopup">
 
-    <div id="layerBackground">
-        <div id="layer">
             <h2>["여름의 문턱", 5월 29일 &lt;콘서트+뮤지엄나이트&gt; 개최]</h2>
-            <hr>
-            <ul>
-                <li>
-                    - 서울시립미술관은 5월 29일 수요일 19:00∽20:00 서소문 본관에서 옥상 세마휴에서 &lt;콘서트+뮤지엄나이트&gt; 개최합니다.
-                </li>
-                <li>
-                    - '여름의 문턱'이라는 주제로 진행되는 이번 콘서트는 
-                    뮤지션 오지은의 공연으로 이루어지며, &lt;그렇게 정해진 길 위에서&gt;, &lt;NONE&gt; 등 10여 곡을 선보일 예정입니다.
-                </li>
-                <li>
-                    - 오지은은 2018 SeMA 신소장품&lt;멀티-액세스 4913&gt;전과 연계한 뮤지엄나이트 프로그램의 뮤직 디렉터를 맡아 
-                    전시 작품과 어울리는 8개의 곡을 선곡한 바 있습니다.
-                </li>
-            </ul>
-            <span onclick="fnClose()">닫기&times;</span>
+
+            <p>- 서울시립미술관은 5월 29일 수요일 19:00∽20:00 서소문 본관에서 옥상
+                <br>&nbsp;&nbsp; 세마휴에서&lt;콘서트+뮤지엄나이트&gt; 개최합니다.
+            </p>
+            <p>- '여름의 문턱'이라는 주제로 진행되는 이번 콘서트는
+                <br>&nbsp;&nbsp;뮤지션 오지은의 공연으로 이루어지며, &lt;그렇게 정해진 길 위에서&gt;<br>&nbsp;&nbsp;&lt;NONE&gt;등10여 곡을 선보일 예정입니다.
+            </p>
+            <p>- 오지은은 2018 SeMA 신소장품&lt;멀티-액세스 4913&gt;전과 연계한 <br>&nbsp;&nbsp;뮤지엄나이트프로그램의 뮤직 디렉터를 맡아 전시 작품과 어울리는 8개의 곡을 <br>&nbsp;&nbsp;선곡한 바 있습니다.
+            </p>
+            <p><span id="closeBtn">&times;닫기</span></p>
         </div>
     </div>
+    <!--div#layerPopupBg-->
+    <script src="script/jquery-1.12.3.js"></script>
     <script src="script/script.js"></script>
-</body>
-</html>
+</body></html>
+
+<!--
+[풀다운 네비게이션 메뉴]
+
+    pull, 당기다
+    1. 제이쿼리 라이브러리 필요
+        1) 파일 다운로드
+        2) CDN
+    2. 선택자 지정 후 이벤트 관련 메서드 적용
+        => $("#mainMenu>li").mouseover();
+    3. 적용된 메서드의 익명 함수
+        => 메서드의 인수에 작성
+            익명함수 만드는 방법 :
+            function(){
+                내용
+            }
+    4. 익명함수 내부 코드 작성
+        1) 마우스오버하여 선택한 li요소의
+            (#mainMenu>li)
+            하위요소를 슬라이드 다운
+        2) 마우스아웃하여 선택한 li요소의
+            (#mainMenu>li)
+            하위요소를 슬라이드 업
+
+
+-->
